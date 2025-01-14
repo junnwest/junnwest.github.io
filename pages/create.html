@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create / Create</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="/assets/css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans:wght@400;700&family=Open+Sans+Condensed:wght@700&family=Montserrat:wght@400;700&family=Oxanium:wght@400;700&family=Open+Sans+Hebrew+Condensed:wght@300;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="navbar-container"></div>
+  <script>
+    fetch("../navbar.html")
+      .then(response => response.text())
+      .then(data => document.getElementById("navbar-container").innerHTML = data);
+  </script>
+
+  <div class="container-fluid create-page">
+    <div class="row">
+      <div class="col-md-3">
+        <h1 class="page-title">>CREATE / CREATE</h1>
+      </div>
+      <div class="col-md-2"></div>
+
+      <!-- Long Rectangle (Columns 6-7) -->
+      <div class="col-md-2 achievement-box">
+        <div class="achievement-header">
+            <span id="date">DATE&</span>
+            <span id="age">AGE</span>
+        </div>
+      </div>
+      <div class="col-md-5"></div>
+    </div>
+      
+    <div class="row activity activity_1">
+      <div class="create_image" id="butterfly"><img src="/assets/images/create_images/butterfly.svg" alt=""></div>
+      <div class="create_image" id="soombi"><img src="/assets/images/create_images/soombist.svg" alt=""></div>
+      <div class="col-md-5 text-right">
+        <h3 class="activity-phrase">Eco-friendly<br>Neoprene Design</h3>
+        <h2 class="activity-title">Soombi St.</h2>
+        <p class="activity-description">
+          A sustainable fashion project<br>inspired by Jeju’s <strong>haenyo</strong> divers,<br>Soombi Street repurposes Neoprene<br>scraps from wetsuit manufacturers<br>into <strong>handcrafted wallets and<br>bags.</strong> Through perseverance and<br>repeated outreach, the initiative<br>transformed an idea into reality,<br>highlighting the value of commitment<br>and daily effort in achieving<br>
+          long-term goals.
+        </p>
+      </div>
+      
+      <div class="col-md-1 in-achievement-box">
+        <div class="date-age text-right">
+            <span class="year" id="year_in_box_left">2018-2020</span>
+            <span class="age" id="age_in_box_left">14</span>
+        </div>
+      </div>
+
+      <div class="col-md-1 in-achievement-box align-bottom">
+          <div class="date-age text-left">
+              <span class="year" id="year_in_box_right">2019-2020</span>
+              <span class="age" id="age_in_box_right">15</span>
+          </div>
+      </div>
+    
+      <!-- Text Content (Right of Rectangle, Column 8, Right-Aligned) -->
+      <div class="col-md-4 text-left align-bottom">
+        <h3 class="activity-phrase">Community Art <br>& Revitalization</h3>
+        <h2 class="activity-title">Penguin Village Jeju</h2>
+        <p class="activity-description">
+          Founded and led a community <br>service club dedicated to revitalizing <br><strong>Boseong-ri</strong> village on Jeju 
+          Island <br>through mural painting and <br><strong>upcycled art.</strong> Efforts included <br>refurbishing homes, 
+          transforming <br>public spaces, and hosting <br>exhibitions to promote sustainability <br>and artistic 
+          expression.
+        </p>
+      </div>
+    </div>
+
+    <div class="row activity activity_2">
+      <div class="create_image" id="bench"><img src="/assets/images/create_images/bench.svg" alt=""></div>
+      <div class="col-md-5 text-right">
+        <h3 class="activity-phrase">IGCSE</h3>
+        <h2 class="activity-title">Highschool Art</h2>
+        <p class="activity-description">
+          The IGCSE Art & Design course fosters<br>creative expression through various<br> mediums, including drawing,<br>painting, printmaking, photography,<br>and digital art. Students learn to<br>develop technical skills, explore<br>artistic concepts, and build a<br> <strong>portfolio</strong> demonstrating their<br>ability to experiment, refine ideas,<br>and produce meaningful visual work. 
+        </p>
+      </div>
+      
+      <div class="col-md-1 in-achievement-box">
+        <div class="date-age text-right">
+            <span class="year" id="year_in_box_left">2018-2020</span>
+            <span class="age" id="age_in_box_left">14</span>
+        </div>
+      </div>
+
+      <div class="col-md-1 in-achievement-box align-bottom">
+          <div class="date-age text-left">
+              <span class="year" id="year_in_box_right">2019-2020</span>
+              <span class="age" id="age_in_box_right">15</span>
+          </div>
+      </div>
+    
+      <!-- Text Content (Right of Rectangle, Column 8, Right-Aligned) -->
+      <div class="col-md-4 text-left align-bottom">
+        <h3 class="activity-phrase">Upcycled<br>Concrete Benches</h3>
+        <h2 class="activity-title">Synapse After<br>COVID-19</h2>
+        <p class="activity-description">
+          Designed as a medium for post-<br>pandemic communication, “Synapse<br>After COVID-19” features <strong>upcycled<br>concrete benches</strong>installed at<br>Teheran-ro in <strong>Gangnam,</strong> Seoul.<br>The project reimagines urban spaces<br>by fostering interaction and<br>connection among citizens while<br>promoting sustainable design.
+        </p>
+      </div>
+    </div>
+
+
+    <div class="row activity activity_3">
+      <div class="create_image" id="uporic"><img src="/assets/images/create_images/uporic.svg" alt=""></div>
+      <div class="col-md-5 text-right">
+        <h3 class="activity-phrase">Digital Experimentation</h3>
+        <h2 class="activity-title">Orange and Mustard</h2>
+        <p class="activity-description">
+          Originally a platform for sharing<br>music taste, Orange and Mustard<br>evolved into a creative space for<br>experimenting with digital tools such<br>as <strong>Adobe</strong> Illustrator, After Effects,<br>and Premiere Pro. It serves as my<br>personal exploration of visual<br>storytelling and design.
+        </p>
+      </div>
+      
+      <div class="col-md-1 in-achievement-box">
+        <div class="date-age text-right">
+            <span class="year" id="year_in_box_left">2018-2020</span>
+            <span class="age" id="age_in_box_left">14</span>
+        </div>
+      </div>
+
+      <div class="col-md-1 in-achievement-box align-bottom">
+          <div class="date-age text-left">
+              <span class="year" id="year_in_box_right">2019-2020</span>
+              <span class="age" id="age_in_box_right">15</span>
+          </div>
+      </div>
+    
+      <!-- Text Content (Right of Rectangle, Column 8, Right-Aligned) -->
+      <div class="col-md-4 text-left align-bottom">
+        <h3 class="activity-phrase">Blockchain Branding<br>& Development</h3>
+        <h2 class="activity-title">UPORIC</h2>
+        <p class="activity-description">
+          As a <strong>branding designer</strong> and<br><strong>front-end developer</strong> at Uporic, a<br>blockchain-based authorization<br>startup, contributions included logo<br>and website design, cohesive<br>branding strategies, and front-end<br>development using HTML, CSS, and<br>JavaScript. Additionally, efforts<br>supported the creation of Uporic’s<br>core services, such as a Genuine<br>Certification System and a Register<br>Service for ownership verification.
+        </p>
+      </div>
+    </div>
+
+    <div class="row activity activity_4">
+      <div class="create_image" id="orangefilms"><img src="/assets/images/create_images/orangefilms.png" alt=""></div>
+      <div class="col-md-5 text-right">
+        <h3 class="activity-phrase">Travel Photography<br>Collection</h3>
+        <h2 class="activity-title">@orange_films_</h2>
+        <p class="activity-description">
+          Orange Films is an <strong>Instagram</strong> page<br>dedicated to capturing moments<br>from travels worldwide. Using a<br>RICOH GR-II, Olympus OM-1, and<br>iPhone 15 Pro, the collection<br>showcases a personal perspective on<br>diverse <strong>everyday scenes.</strong>
+        </p>
+      </div>
+      
+      <div class="col-md-1 in-achievement-box">
+        <div class="date-age text-right">
+            <span class="year" id="year_in_box_left">2018-2020</span>
+            <span class="age" id="age_in_box_left">14</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="footer-container"></div>
+  <script>
+    fetch("../footer.html")
+      .then(response => response.text())
+      .then(data => document.getElementById("footer-container").innerHTML = data);
+  </script>
+
+</body>
+</html>

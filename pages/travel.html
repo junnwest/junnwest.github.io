@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel / World</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="/assets/css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans:wght@400;700&family=Open+Sans+Condensed:wght@700&family=Montserrat:wght@400;700&family=Oxanium:wght@400;700&family=Open+Sans+Hebrew+Condensed:wght@300;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="navbar-container"></div>
+  <script>
+    fetch("../navbar.html")
+      .then(response => response.text())
+      .then(data => document.getElementById("navbar-container").innerHTML = data);
+  </script>
+
+
+  <div class="container-fluid travel-container">
+    <div class="row">
+      <div class="col-md-3">
+        <h1 class="page-title travel-title">>TRAVEL / WORLD</h1>
+      </div>
+      <div class="col-md-2"></div>
+    </div>
+
+    <div class="row">
+        <!-- South Korea -->
+        <div class="col-md-1"></div>
+        <div class="col-md-2 country-box" id="south_korea">
+            <img src="/assets/images/travel_images/south_korea.svg" class="country-map img-fluid" alt="South Korea">
+            <span class="country-abbr">KOR</span>
+            <span class="country-name country-name-right">South<br>Korea</span>
+        </div>
+
+        <div class="col-md-1"></div>
+
+        <!-- USA -->
+        <div class="col-md-7 country-box" id="usa">
+            <img src="/assets/images/travel_images/usa.svg" class="country-map img-fluid" alt="USA">
+            <span class="country-abbr">USA</span>
+            <span class="country-name country-name-right">United<br>States of<br>America</span>
+        </div>
+
+        <div class="col-md-1"></div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-3"></div>
+      <div class="col-md-3 country-box" id="uk">
+          <img src="/assets/images/travel_images/uk.svg" class="country-map" alt="UK">
+          <span class="country-abbr">GBR</span>
+          <span class="country-name country-name-right">United<br>Kingdom</span>
+      </div>
+
+      <div class="col-md-1"></div>
+
+      <!-- France -->
+      <div class="col-md-3 country-box" id="france">
+          <img src="/assets/images/travel_images/france.svg" class="country-map" alt="France">
+          <span class="country-abbr">FRA</span>
+          <span class="country-name country-name-left">France</span>
+      </div>
+
+      <div class="col-md-2"></div>
+  </div>
+
+  <div class="row">
+      <!-- Italy -->
+      <div class="col-md-5 country-box" id="italy">
+          <img src="/assets/images/travel_images/italy.svg" class="country-map" alt="Italy">
+          <span class="country-abbr">ITA</span>
+          <span class="country-name country-name-left">Italy</span>
+      </div>
+
+      <!-- Switzerland -->
+      <div class="col-md-2 country-box" id="switzerland">
+          <img src="/assets/images/travel_images/switzerland.svg" class="country-map" alt="Switzerland">
+          <span class="country-abbr">CHE</span>
+          <span class="country-name country-name-right">Switzer<br>land</span>
+      </div>
+
+      <!-- Japan -->
+      <div class="col-md-5 country-box" id="japan">
+          <img src="/assets/images/travel_images/japan.svg" class="country-map" alt="Japan">
+          <span class="country-abbr">JPN</span>
+          <span class="country-name country-name-right">Japan</span>
+      </div>
+  </div>
+
+  </div>
+
+  <div id="footer-container"></div>
+  <script>
+    fetch("../footer.html")
+      .then(response => response.text())
+      .then(data => document.getElementById("footer-container").innerHTML = data);
+  </script>
+</body>
+</html>
