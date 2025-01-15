@@ -142,31 +142,42 @@ body {
   font-family: "Helvetica", sans-serif;
   font-weight: bold;
   font-size: 20px;
+  letter-spacing: -0.05em;
+  margin-bottom: 4px;
+  width: 100%;
+  text-align: right;
+  display: inline-block;
+  transform: translateX(+10px); /* Move left */
 }
 
 .age {
   font-family: "Oxanium", sans-serif;
   font-weight: bold;
   font-size: 128px;
-  letter-spacing: -0.12em;
-}
-
-#year_in_box_right, #age_in_box_right {
-  margin-left: -50px;
-}
-
-#year_in_box_left, #age_in_box_left {
-  margin-left: -60px;
-}
-
-/* If the activity is left-aligned, align Date & Age to the right */
-.activity .in-achievement-box .date-age.text-right {
+  letter-spacing: -0.2em;
+  display: flex;
+  width: 100%;
   text-align: right;
+  display: inline-block;
 }
 
-/* If the activity is right-aligned, align Date & Age to the left */
-.activity .in-achievement-box .date-age.text-left {
-  text-align: left;
+
+.date-age {
+  display: flex;
+  flex-direction: column; /* Stacks year above age */
+  align-items: flex-end; /* Adjusts spacing */
+  justify-content: center;
+}
+
+.right-aligned {
+  align-items: flex-end;
+  transform: translateX(-50px); /* Move left */
+}
+
+
+.left-aligned {
+  align-items: flex-start;
+  transform: translateX(-20px); /* Move left */
 }
 
 .row.activity_1 {
@@ -231,9 +242,9 @@ strong {
 }
 
 #butterfly {
-  width: 40%;
-  right: 2%;
-  margin-top: -250px;
+  width: 50%;
+  right: 0%;
+  margin-top: -290px;
   z-index: -1;
 }
 #soombi {
